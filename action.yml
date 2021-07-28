@@ -1,4 +1,4 @@
-name: "Setup Meteor.js environment - jwils"
+name: "Setup Meteor.js environment v2"
 description: "Setup a Meteor.js and add it to the PATH"
 branding:
   color: "purple"
@@ -7,5 +7,5 @@ inputs:
   meteor-release:
     description: "Specific Meteor.js release. For example: 2.3.2"
 runs:
-  using: "14"
+  using: "node12"
   main: "dist/index.js"
