@@ -33,7 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup meteor
-        uses: meteorengineer/setup-meteor@v2
+        uses: johnwils/setup-meteor@v2
         with:
           meteor-release: ${{ matrix.meteor }}
       - run: meteor npm install
