@@ -1,6 +1,6 @@
 # setup-meteor
 
-This is a clone of https://github.com/meteorengineer/setup-meteor with updated github checkout version node environment to match the latest meteor release.
+This is a clone of https://github.com/meteorengineer/setup-meteor with updated npm packages, the latest github checkout version and node version matching the latest meteor release.
 
 This action sets up meteor environment for use in actions.
 
