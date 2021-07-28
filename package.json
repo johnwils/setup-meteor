@@ -1,7 +1,7 @@
 {
   "name": "setup-meteor",
   "private": true,
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -10,21 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meteorengineer/setup-meteor.git"
+    "url": "git+https://github.com/johnwils/setup-meteor.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/meteorengineer/setup-meteor/issues"
+    "url": "https://github.com/johnwils/setup-meteor/issues"
   },
-  "homepage": "https://github.com/meteorengineer/setup-meteor#readme",
+  "homepage": "https://github.com/johnwils/setup-meteor#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^2.2.0",
-    "@actions/io": "^1.0.2"
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "@actions/io": "^1.1.1"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.21.0"
+    "@vercel/ncc": "^0.29.0"
   }
 }

@@ -1,6 +1,6 @@
 # setup-meteor
 
-
+This is a clone of https://github.com/meteorengineer/setup-meteor with updated github checkout version node environment to match the latest meteor release.
 
 This action sets up meteor environment for use in actions.
 
@@ -9,29 +9,31 @@ This action sets up meteor environment for use in actions.
 See [action.yml](action.yml)
 
 Basic:
+
 ```yaml
 steps:
-- uses: actions/checkout@v1
-- uses: meteorengineer/setup-meteor@v1
-  with:
-    meteor-release: '1.8.1'
-- run: meteor npm install
-- run: meteor npm test
+  - uses: actions/checkout@v2
+  - uses: meteorengineer/setup-meteor@v2
+    with:
+      meteor-release: "2.3.2"
+  - run: meteor npm install
+  - run: meteor npm test
 ```
 
 Matrix Testing:
+
 ```yaml
 jobs:
   build:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        meteor: [ '1.8.1', '1.9-beta.3' ]
+        meteor: ["2.2", "2.3.2"]
     name: Meteor ${{ matrix.meteor }} sample
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Setup meteor
-        uses: meteorengineer/setup-meteor@v1
+        uses: meteorengineer/setup-meteor@v2
         with:
           meteor-release: ${{ matrix.meteor }}
       - run: meteor npm install
